@@ -1,0 +1,34 @@
+# Залежності
+node_modules/
+.pnpm-store/
+# Результати компіляції та білду
+dist/
+build/
+.next/
+out/
+# Змінні оточення (СЕКРЕТИ - НІКОЛИ НЕ КОМІТИТИ!)
+.env
+.env*.local
+.env.production
+# Логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+# Згенеровані файли баз даних та міграцій
+prisma/*.db
+prisma/*.db-journal
+# Системні файли ОС
+.DS_Store
+Thumbs.db
+# Налаштування редакторів
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+# Локальні дані Docker-контейнерів
+postgres_data/
+redis_data/
+minio_data/
