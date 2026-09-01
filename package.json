@@ -1,10 +1,24 @@
 {
+  "name": "teamflow-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:backend": "npm run start:dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "build": "npm run build --workspaces",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "docker:logs": "docker compose logs -f",
+    "docker:ps": "docker compose ps",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,md,yml}\""
+  },
   "devDependencies": {
     "@commitlint/cli": "^21.2.2",
     "@commitlint/config-conventional": "^21.2.2",
-    "husky": "^9.1.7"
-  },
-  "scripts": {
-    "prepare": "husky"
+    "husky": "^9.1.7",
+    "prettier": "^3.3.3"
   }
 }
