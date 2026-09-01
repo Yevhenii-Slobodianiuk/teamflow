@@ -9,7 +9,7 @@ out/
 # Змінні оточення (СЕКРЕТИ - НІКОЛИ НЕ КОМІТИТИ!)
 .env
 .env*.local
-.env.productio
+.env.production
 # Логи
 npm-debug.log*
 yarn-debug.log*
